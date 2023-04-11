@@ -1,6 +1,9 @@
 package com.openroad.vehicle
 
 import com.fasterxml.jackson.databind.JsonNode
+import org.http4k.format.Jackson
+import org.http4k.format.Jackson.number
+import org.http4k.format.Jackson.string
 
 interface PowerTrain {
     fun fuelType() : FuelType
@@ -8,6 +11,7 @@ interface PowerTrain {
     fun power() : Double
 
     fun co2() : Double
+    fun toJson(): JsonNode
 }
 data class InternalCombustion(
     val fuelType: FuelType,
@@ -30,8 +34,20 @@ data class InternalCombustion(
         return co2
     }
 
+    override fun toJson(): JsonNode {
+        return Jackson.obj(
+            "fuelType" to string(fuelType.name),
+            "capacity" to number(capacity),
+            "aspiration" to string(aspiration),
+            "cylinders" to number(cylinders),
+            "power" to number(power),
+            "torque" to number(torque),
+            "co2" to number(co2)
+        )
+    }
+
     companion object {
-        fun fromJson(jsonNode: JsonNode): InternalCombustion {
+        fun fromExternalJson(jsonNode: JsonNode): InternalCombustion {
             val registrationNode = jsonNode.get("VehicleRegistration")
             val capacity = registrationNode.get("EngineCapacity").textValue().toInt()
             val technicalDetailsNode = jsonNode.get("TechnicalDetails")
@@ -44,6 +60,18 @@ data class InternalCombustion(
             val co2 = performanceNode.get("Co2").doubleValue()
             val fuelType = FuelType.defaultedValueOf(registrationNode.get("FuelType").textValue())
             return InternalCombustion(fuelType, capacity, aspiration, cylinders, power, torque, co2)
+        }
+
+        fun fromJson(jsonNode: JsonNode): InternalCombustion {
+            return InternalCombustion(
+                FuelType.defaultedValueOf(jsonNode.get("fuelType").textValue()),
+                jsonNode.get("capacity").intValue(),
+                jsonNode.get("aspiration").textValue(),
+                jsonNode.get("cylinders").intValue(),
+                jsonNode.get("power").doubleValue(),
+                jsonNode.get("torque").doubleValue(),
+                jsonNode.get("co2").doubleValue()
+            )
         }
     }
 

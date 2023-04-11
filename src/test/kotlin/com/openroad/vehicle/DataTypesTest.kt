@@ -10,7 +10,13 @@ class DataTypesTest {
         val fileData = DataTypesTest::class.java.getResource("/exampleVehicleLookup.json").readText()
         val jsonNode = Jackson.parse(fileData)
         val expectedVehicleData = getExpectedVehicleData()
-        assertEquals(expectedVehicleData, VehicleData.fromJson(jsonNode))
+        assertEquals(expectedVehicleData, VehicleData.fromExternalJson(jsonNode))
+    }
+
+    @Test
+    fun `will roundtrip VehicleData datatype`(){
+        val vehicleData = getExpectedVehicleData()
+        assertEquals(vehicleData, VehicleData.fromJson(vehicleData.toJson()))
     }
 
     private fun getExpectedVehicleData() = VehicleData(
