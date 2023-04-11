@@ -1,0 +1,296 @@
+{
+  "BillingAccount": {
+    "AccountType": "Trial",
+    "AccountBalance": 999.99,
+    "TransactionCost": 999.99,
+    "ExtraInformation": {}
+  },
+  "TechnicalSupport": {
+    "ServerId": "UK1",
+    "RequestId": "c3089d06d21e47e6ab89b65ea4929a9a",
+    "QueryDurationMs": 7,
+    "SupportDate": "09/04/2023",
+    "SupportTime": "17:17:44",
+    "SupportCode": "c3089d06",
+    "SupportInformationList": [
+      "B2B-R1"
+    ]
+  },
+  "Request": {
+    "RequestGuid": "c3089d06-d21e-47e6-ab89-b65ea4929a9a",
+    "PackageId": "1d417321-590f-4249-9bc3-1b10333ccc2c",
+    "PackageVersion": 2,
+    "ResponseVersion": 2,
+    "DataKeys": {
+      "Vrm": "RE67 AZC"
+    }
+  },
+  "Response": {
+    "StatusCode": "Success",
+    "StatusMessage": "Success",
+    "StatusInformation": {
+      "Lookup": {
+        "StatusCode": "Success",
+        "StatusMessage": "Success",
+        "AdviceTextList": []
+      }
+    },
+    "DataItems": {
+      "UkvdEnhancedData": {
+        "ElectricVehicleData": null,
+        "Identification": {
+          "IsElectricVehicle": false
+        }
+      },
+      "TechnicalDetails": {
+        "Dimensions": {
+          "UnladenWeight": 1635.0,
+          "RigidArtic": "RIGID",
+          "BodyShape": "NA",
+          "PayloadVolume": null,
+          "PayloadWeight": null,
+          "Height": 1457.0,
+          "NumberOfDoors": 4,
+          "NumberOfSeats": 5,
+          "KerbWeight": 1635.0,
+          "GrossTrainWeight": null,
+          "FuelTankCapacity": 74.00,
+          "LoadLength": null,
+          "DataVersionNumber": null,
+          "WheelBase": 2960.0,
+          "CarLength": 4954.0,
+          "Width": 2091.0,
+          "NumberOfAxles": 2,
+          "GrossVehicleWeight": 2260.0,
+          "GrossCombinedWeight": null
+        },
+        "Safety": {
+          "EuroNcap": {
+            "Child": 84.00,
+            "Adult": 92.00,
+            "Pedestrian": 80.00
+          }
+        },
+        "General": {
+          "Engine": {
+            "FuelCatalyst": "C",
+            "Stroke": 92.0,
+            "PrimaryFuelFlag": "Y",
+            "ValvesPerCylinder": 4,
+            "Aspiration": "Turbo Charged",
+            "FuelSystem": "P DI Turbo Cat Euro 6",
+            "NumberOfCylinders": 4,
+            "CylinderArrangement": "I",
+            "ValveGear": "DOHC",
+            "Location": "FRONT",
+            "Description": null,
+            "Bore": 83.0,
+            "Make": "JAGUAR/DAIMLER",
+            "FuelDelivery": "Direct Injection"
+          },
+          "PowerDelivery": "NORMAL",
+          "TypeApprovalCategory": "M1",
+          "ElectricVehicleBattery": {
+            "Capacity": null,
+            "ChargePort": null,
+            "ChargeTime": null,
+            "Type": null
+          },
+          "SeriesDescription": "MK2",
+          "DriverPosition": "R",
+          "DrivingAxle": "RWD",
+          "DataVersionNumber": null,
+          "EuroStatus": "6",
+          "IsLimitedEdition": false
+        },
+        "Performance": {
+          "Torque": {
+            "FtLb": 269.40,
+            "Nm": 365.0,
+            "Rpm": 1200.0
+          },
+          "NoiseLevel": null,
+          "DataVersionNumber": null,
+          "Power": {
+            "Bhp": 246.70,
+            "Rpm": 5500.0,
+            "Kw": 184.00
+          },
+          "MaxSpeed": {
+            "Kph": 244.0,
+            "Mph": 152.0
+          },
+          "Co2": 154.0,
+          "Particles": null,
+          "Acceleration": {
+            "Mph": null,
+            "Kph": null,
+            "ZeroTo60Mph": null,
+            "ZeroTo100Kph": null
+          }
+        },
+        "Consumption": {
+          "ExtraUrban": {
+            "Lkm": 5.80,
+            "Mpg": 48.70
+          },
+          "UrbanCold": {
+            "Lkm": 8.40,
+            "Mpg": 33.60
+          },
+          "Combined": {
+            "Lkm": 6.80,
+            "Mpg": 41.50
+          }
+        }
+      },
+      "ClassificationDetails": {
+        "Smmt": {
+          "Make": "JAGUAR",
+          "Mvris": {
+            "ModelCode": null,
+            "MakeCode": null
+          },
+          "Trim": "R-SPORT",
+          "Range": "XF"
+        },
+        "Dvla": {
+          "Model": "XF R-SPORT I AUTO",
+          "Make": "JAGUAR"
+        },
+        "Ukvd": {
+          "IsElectricVehicle": false,
+          "VrmFormat": {
+            "IsGbGeneralFormat": true,
+            "IsNiGeneralFormat": false
+          }
+        }
+      },
+      "VehicleStatus": {
+        "MotVed": {
+          "VedRate": {
+            "FirstYear": {
+              "SixMonth": null,
+              "TwelveMonth": 645.0
+            },
+            "PremiumVehicle": {
+              "YearTwoToSix": {
+                "TwelveMonth": 570.0,
+                "SixMonth": 313.5
+              }
+            },
+            "Standard": {
+              "SixMonth": 99.0,
+              "TwelveMonth": 180.0
+            }
+          },
+          "VedCo2Emissions": 154.0,
+          "VedBand": null,
+          "VedCo2Band": null
+        }
+      },
+      "VehicleHistory": {
+        "V5CCertificateCount": 4,
+        "PlateChangeCount": 0,
+        "NumberOfPreviousKeepers": 2,
+        "V5CCertificateList": [
+          {
+            "CertificateDate": "2022-09-29T00:00:00"
+          },
+          {
+            "CertificateDate": "2019-05-03T00:00:00"
+          },
+          {
+            "CertificateDate": "2019-05-03T00:00:00"
+          },
+          {
+            "CertificateDate": "2017-11-02T00:00:00"
+          }
+        ],
+        "KeeperChangesCount": 2,
+        "VicCount": 0,
+        "ColourChangeCount": null,
+        "ColourChangeList": null,
+        "KeeperChangesList": [
+          {
+            "DateOfTransaction": "2021-09-01T00:00:00",
+            "NumberOfPreviousKeepers": 2,
+            "DateOfLastKeeperChange": "2021-09-01T00:00:00"
+          },
+          {
+            "DateOfTransaction": "2019-05-03T00:00:00",
+            "NumberOfPreviousKeepers": 1,
+            "DateOfLastKeeperChange": "2019-05-03T00:00:00"
+          }
+        ],
+        "PlateChangeList": [],
+        "VicList": null
+      },
+      "VehicleRegistration": {
+        "DateOfLastUpdate": "2023-02-10T14:42:24",
+        "Colour": "SILVER",
+        "VehicleClass": "Car",
+        "CertificateOfDestructionIssued": false,
+        "EngineNumber": "170727Y0406PT204",
+        "EngineCapacity": "1997",
+        "TransmissionCode": "A",
+        "Exported": false,
+        "YearOfManufacture": "2017",
+        "WheelPlan": "2 AXLE RIGID BODY",
+        "DateExported": null,
+        "Scrapped": false,
+        "Transmission": "AUTO 8 GEARS",
+        "DateFirstRegisteredUk": "2017-11-02T00:00:00",
+        "Model": "XF R-SPORT I AUTO",
+        "GearCount": 8,
+        "ImportNonEu": false,
+        "PreviousVrmGb": null,
+        "GrossWeight": 2260.0,
+        "DoorPlanLiteral": "4 DOOR SALOON",
+        "MvrisModelCode": null,
+        "Vin": "For access to the full VIN / Chassis number please visit here: https://panel.ukvehicledata.co.uk/EnableFullVin",
+        "Vrm": "RE67AZC",
+        "DateFirstRegistered": "2017-11-02T00:00:00",
+        "DateScrapped": null,
+        "DoorPlan": "02",
+        "YearMonthFirstRegistered": "2017-11",
+        "VinLast5": "59931",
+        "VehicleUsedBeforeFirstRegistration": false,
+        "MaxPermissibleMass": 2260.0,
+        "Make": "JAGUAR",
+        "MakeModel": "JAGUAR XF R-SPORT I AUTO",
+        "TransmissionType": "Automatic",
+        "SeatingCapacity": 5,
+        "FuelType": "PETROL",
+        "Co2Emissions": 154.0,
+        "Imported": false,
+        "MvrisMakeCode": null,
+        "PreviousVrmNi": null,
+        "VinConfirmationFlag": null
+      },
+      "SmmtDetails": {
+        "Range": "XF",
+        "FuelType": "PETROL",
+        "EngineCapacity": "1997",
+        "MarketSectorCode": "AA",
+        "CountryOfOrigin": "UNITED KINGDOM",
+        "ModelCode": "529",
+        "ModelVariant": "XF R-SPORT I AUTO",
+        "DataVersionNumber": null,
+        "NumberOfGears": 8,
+        "NominalEngineCapacity": 2.00,
+        "MarqueCode": "B3",
+        "Transmission": "AUTOMATIC",
+        "BodyStyle": "SALOON",
+        "VisibilityDate": "22/03/2017",
+        "SysSetupDate": "22/03/2017",
+        "Marque": "JAGUAR",
+        "CabType": "NA",
+        "TerminateDate": "05/07/2019",
+        "Series": "X260",
+        "NumberOfDoors": 4,
+        "DriveType": "4X2"
+      }
+    }
+  }
+}
