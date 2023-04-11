@@ -1,4 +1,4 @@
-package com.openroad.vehicle
+package com.openroad.vehicle.types
 
 import com.fasterxml.jackson.databind.JsonNode
 import org.http4k.format.Jackson

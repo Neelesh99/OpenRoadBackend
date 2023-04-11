@@ -1,4 +1,4 @@
-package com.openroad.vehicle
+package com.openroad.vehicle.types
 
 import com.fasterxml.jackson.databind.JsonNode
 import org.http4k.format.Jackson
@@ -14,7 +14,8 @@ data class VehicleTechnicals(val dimensions: VehicleDimensions, val powertrain: 
 
     companion object {
         fun fromExternalJson(jsonNode: JsonNode): VehicleTechnicals {
-            val vehicleDimensions = VehicleDimensions.fromExternalJson(jsonNode.get("TechnicalDetails").get("Dimensions")!!)
+            val vehicleDimensions =
+                VehicleDimensions.fromExternalJson(jsonNode.get("TechnicalDetails").get("Dimensions")!!)
             val powertrain = InternalCombustion.fromExternalJson(jsonNode)
             val consumption = InternalCombustionConsumption.fromExternalJson(jsonNode)
             return VehicleTechnicals(vehicleDimensions, powertrain, consumption)

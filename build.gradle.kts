@@ -4,6 +4,7 @@ import java.time.LocalDate
 val http4kVersion = "4.41.3.0"
 val kotlinVersion = "1.8.20"
 val junitVersion = "5.9.2"
+val mockkVersion = "1.13.4"
 
 plugins {
     kotlin("jvm") version "1.7.21"
@@ -54,6 +55,9 @@ dependencies {
     implementation("org.http4k:http4k-server-undertow:${http4kVersion}")
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8:${kotlinVersion}")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.0-Beta")
+    implementation("io.arrow-kt:arrow-core:1.2.0-RC")
+    implementation("io.klogging:klogging-jvm:0.4.13")
+    testImplementation("io.mockk:mockk:${mockkVersion}")
     testImplementation("org.http4k:http4k-testing-approval:${http4kVersion}")
     testImplementation("org.http4k:http4k-testing-hamkrest:${http4kVersion}")
     testImplementation("org.junit.jupiter:junit-jupiter-api:${junitVersion}")

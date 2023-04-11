@@ -1,4 +1,4 @@
-package com.openroad.vehicle
+package com.openroad.vehicle.types
 
 enum class FuelType {
     PETROL,
